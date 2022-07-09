@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
- //Modulo personalizado
-import { PrimeNgModule } from './prime-ng/prime-ng.module';
+
 
 
 
@@ -13,7 +13,7 @@ import { PrimeNgModule } from './prime-ng/prime-ng.module';
   ],
   imports: [
     BrowserModule,
-    PrimeNgModule
+    SharedModule
 /*     ButtonModule,
     CardModule */
   ],
