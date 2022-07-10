@@ -1,0 +1,66 @@
+<div class="text-layout">
+    <h1>Pipes Básicos</h1>
+    <p>
+        Pipes incluidos en angular
+    </p>
+</div>
+
+<div class="grid">
+    <div class="col-12 md:col-6 lg:col-4 sm:flex-nowrap">
+        <p-card header="uppercase"
+                [subheader]="nombre|uppercase">
+                {{apellido|uppercase}}        
+        </p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-4">
+        <p-card header="lowercase"
+        [subheader]="nombre|lowercase">
+        {{apellido|lowercase}}        
+</p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-4">
+        <p-card header="titlecase"
+        [subheader]="nombre|titlecase">
+        {{apellido|titlecase}}        
+</p-card>
+    </div>
+    
+</div>
+
+<div class="text-layout">
+    <h1>Dates | Fecha | Pipe</h1>
+    <p>
+        Pipes para mostrar fechas
+    </p>
+</div>
+
+<div class="grid">
+    <div class="col-12 md:col-6 lg:col-6 sm:flex-nowrap">
+        <p-card>
+            <ul>
+                <li>fecha</li>
+                <li>fecha | date</li>
+                <li>fecha | date:'short'</li>
+                <li>fecha | date:'long'</li>
+                <li>fecha | date:'M'</li>
+                <li>fecha | date:'MM'</li>
+                <li>fecha | date:'MMMM'</li>
+                <li>fecha | date:'MMMM , dd , yyyy'</li>
+            </ul>  
+        </p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-6">
+        <p-card>
+            <ul>
+                <li>{{fecha}}</li>
+                <li>{{fecha | date}}</li>
+                <li>{{fecha | date:'short'}}</li>
+                <li>{{fecha | date:'long'}}</li>
+                <li>{{fecha | date:'M'}}</li>
+                <li>{{fecha | date:'MM'}}</li>
+                <li>{{fecha | date:'MMMM'}}</li>
+                <li>{{fecha | date:'MMMM , dd , yyyy'}}</li>
+            </ul>  
+        </p-card>
+    </div>
+</div>
